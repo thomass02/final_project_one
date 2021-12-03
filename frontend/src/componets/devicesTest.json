@@ -1,0 +1,31 @@
+{
+    "type":
+    [
+
+        {
+            "_id": "1",
+            "name": "Routers"
+        },
+
+        {
+            "_id": "2",
+            "name": "Modems"
+        },
+
+        {
+            "_id": 3,
+            "name": "Laptops"
+        },
+
+        {
+            "_id": 4,
+            "name": "Webcams"
+        },
+
+        {
+            "_id": "5",
+            "name": "Modems"
+        }
+
+    ]
+}

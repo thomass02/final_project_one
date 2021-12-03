@@ -1,0 +1,66 @@
+{
+    "priceFilter": [
+
+        {
+            "_id": 1,
+            "range": "$0-25"
+        },
+
+        {
+            "_id": "2",
+            "range": "$25-100"
+        },
+
+        {
+            "_id": "3",
+            "range": ">$100"
+        }
+
+        
+    ],
+
+    "featuresFilter": [
+        
+        {
+            "_id": 1,
+            "features": "min"
+        },
+
+        {
+            "_id": "2",
+            "features": "max"
+        }
+    ],
+
+
+    "brandFilter": [
+        
+        {
+            "_id": "1",
+            "brand": "un-known"
+        },
+
+        {
+            "_id": "2",
+            "brand": "known"
+        }
+    ],
+
+    "ratingsFilter": [
+        
+        {
+            "_id": "1",
+            "ratings": "0-20"
+        },
+
+        {
+            "_id": "2",
+            "ratings": "20-50"
+        },
+
+        {
+            "_id": "3",
+            "ratings": ">50"
+        }
+    ]
+}
