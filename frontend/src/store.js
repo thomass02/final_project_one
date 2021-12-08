@@ -10,19 +10,24 @@ const initialState = {
 
     userSignin:{
 
-        /* check to see if user is logged in, if so, convert to array for processing */
-        userData: localStorage.getItem('userData')? JSON.parse(localStorage.getItem('userData')):null,
+        /* check to see if user is logged in, if so, 
+        convert to array for processing */
+        userData: localStorage.getItem('userData')? 
+        JSON.parse(localStorage.getItem('userData')):null,
     },
 
     cart: {
 
-        /* check to see if items are existing in cart, if so, convert to array for processing */
-        cartItems: localStorage.getItem('cartItems')? JSON.parse(localStorage.getItem('cartItems')):[],
+        /* check to see if items are existing in cart, if so, 
+        convert to array for processing */
+        cartItems: localStorage.getItem('cartItems')? 
+        JSON.parse(localStorage.getItem('cartItems')):[],
     }
 
 };
 
-/* Get data through reducers dynamically - so we dont rely on static content */
+/* Get data through reducers dynamically
+so we dont rely on static content */
 const reducer = combineReducers({
 
     productList: productListReducer,
@@ -37,7 +42,8 @@ const reducer = combineReducers({
 /* allow chrome browser redux tools access to store */
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const store = createStore(reducer, initialState, composeEnhancer(applyMiddleware(thunk)));
+const store = createStore(reducer, initialState, 
+    composeEnhancer(applyMiddleware(thunk)));
 
 export default store;
 

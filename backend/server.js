@@ -15,8 +15,10 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-/* connect to local mongodb - check for env variable, if not use hard codeded */
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/EZTech', {
+/* connect to local mongodb - check for env variable, 
+if not use hard codeded */
+mongoose.connect(process.env.MONGODB_URL || 
+  'mongodb://localhost/EZTech', {
 });
 
 /* Get data array of devices types from data.js */
